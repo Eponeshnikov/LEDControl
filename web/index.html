@@ -1,0 +1,45 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>LED Control</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+    
+    <fieldset> <!--группируем элементы формы-->
+        <legend>General settings</legend> <!--заголовок для элемента <fieldset> -->
+            Brightness:
+            <input type="range" min="0" max="250" value="100" id="brightness"/>
+            <p>Speed:<input type="range" min="1" max="40" value="10" id="speed"/></p>
+            <p>Color:<input type="color" list="colorList" name="Color" id="idColor" value="#0080FF"></p>
+            <datalist id="colorList">
+                <option value="#FF0000" label="Red">
+                <option value="#FF8000" label="Orange">
+                <option value="#FFFF00" label="Yellow">
+                <option value="#80FF00" label="Chartreuse">
+                <option value="#00FF00" label="Green">
+                <option value="#00FF80" label="Spring Green">
+                <option value="#00FFFF" label="Cyan">
+                <option value="#0080FF" label="Azure">
+                <option value="#0000FF" label="Blue">
+                <option value="#8000FF" label="Violet">
+                <option value="#FF00FF" label="Magenta">
+                <option value="#FFFFFF" label="White">
+            </datalist>
+    </fieldset>
+    <fieldset> <!--группируем элементы формы-->
+        <legend>Effect's settings</legend> <!--заголовок для элемента <fieldset> -->
+        Effects:
+        <select id="mode"> <!--раскрывающийся список-->
+            <option value="0">Rainbow</option>>
+            <option value="1">Bounce</option>
+            <option value="2">Faded bounce</option>
+            <option value="3">One Color</option>
+            <option value="4">Pulse</option>
+        </select>
+    </fieldset>
+    <script src="main.js"></script>
+</body>
+</html>

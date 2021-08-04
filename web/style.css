@@ -1,0 +1,6 @@
+body {
+    background: linear-gradient(to right, #F6EFD2, #CEAD78);
+    color: rgb(84, 98, 221);
+    background-size: 100%;
+    display: block;
+}
